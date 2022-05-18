@@ -2,7 +2,7 @@
 
 Um jogo de raciocínio.
 
-## Building/Debug Server
+## Executando o jogo
 
 Execute `npm run build` para gerar `bundle.js`.
 
