@@ -1,9 +1,9 @@
-# Nine Mens Morris
+# Trilha virtual
 
-A game to test various AI techniques.
+Um jogo de raciocínio.
 
 ## Building/Debug Server
 
-Run `npm run build` to generate `bundle.js` with the transpiled code.
+Execute `npm run build` para gerar `bundle.js`.
 
-Debugging: `npm run watch` This will recompile whenever a change is detected.
+Para iniciar o web execute `npm run watch`.
