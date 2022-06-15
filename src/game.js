@@ -6,7 +6,7 @@ import { setUpStringFormat, getQueryString } from './utils.js';
 setUpStringFormat();
 import * as common from './common.js';
 
-// Structs
+// Structsss
 const TILE = {
     ISAVAILABLE: true,
     ISMILL: 0,
