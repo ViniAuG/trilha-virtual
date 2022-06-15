@@ -116,15 +116,15 @@ function clearElement(element) {
 function setCaptureText(message) {
     let defaultMessage = "";
     if (GAME_PROPERTIES.TURN === YELLOW_TURN) {
-        defaultMessage = "Click on a Blue piece to remove";
+        defaultMessage = "Clique em uma peça azul para remover";
     } else {
-        defaultMessage = "Click on a Red piece to remove";
+        defaultMessage = "Clique em uma peça vermelha para remover";
     }
 
     if (isMillBreakable(GAME_PROPERTIES)) { // Removing from mill is possible if only mills are left
-        defaultMessage += " that is part of a mill";
+        defaultMessage += " que é parte de um moinho";
     } else {
-        defaultMessage += " that is not part of a mill";
+        defaultMessage += " que não é parte de um moinho";
     }
     turnPromptText.style.display = "block";
     turnPromptText.innerHTML = message || defaultMessage;
@@ -134,9 +134,9 @@ function setCaptureText(message) {
 function setMoveText() {
     turnPromptText.style.display = "block";
     if (GAME_PROPERTIES.TURN === 0) {
-        turnPromptText.innerHTML = "Click on a Blue piece and a destination spot";
+        turnPromptText.innerHTML = "Clique em uma peça azul e no local de destino";
     } else if (GAME_PROPERTIES.TURN === 1) {
-        turnPromptText.innerHTML = "Click on a Red piece and a destination spot";
+        turnPromptText.innerHTML = "Clique em uma peça vermelha e no local de destino";
     } else {
         throw new TypeError("GAME_PROPERTIES.TURN invalid, expected 0 or 1 got " + String(GAME_PROPERTIES.TURN));
     }
@@ -287,15 +287,15 @@ function handleNewMills(move, gameProperties) {
     if (numMills > 0) { // Made a mill
         let message = "";
         if (GAME_PROPERTIES.TURN === YELLOW_TURN) {
-            message = "Click on a Blue piece to remove";
+            message = "Clique em uma peça azul para remover";
         } else {
-            message = "Click on a Red piece to remove";
+            message = "Clique em uma peça vermelha para remover";
         }
 
         if (isMillBreakable(gameProperties)) { // Removing from mill is possible if only mills are left
-            message += " that is part of a mill";
+            message += " que é parte de um moinho";
         } else {
-            message += " that is not part of a mill";
+            message += " que não é parte de um moinho";
         }
 
         setCaptureText(message);

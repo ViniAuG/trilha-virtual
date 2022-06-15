@@ -75,7 +75,7 @@ function isValidMove(move) {
 }
 
 function isRemovable(move, otherTurn) {
-    // Is not part of a mill and has a piece
+    // Não é parte de um moinho e tem uma peça
     let tileState = move.BOARD[move.ROW][move.COL];
     return (tileState.ISAVAILABLE && tileState.TURN === otherTurn);
 }
